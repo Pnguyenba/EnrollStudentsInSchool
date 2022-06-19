@@ -88,22 +88,13 @@ namespace EnrollStudentsInSchool_
             if (btnTraMa.Text == "Tra mã")
             {
                 dataGridView = new DataGridView();
-                dataGridView.Location = new Point(dgvStudent.Location.X, dgvStudent.Location.Y);
-                dataGridView.Height = 400;
-                dataGridView.Dock = DockStyle.Bottom;
-                pnlMain.Controls.Remove(dgvStudent);
-                pnlMain.Controls.Add(dataGridView);
-                myExecuteNonQuery.LoadData(dataGridView, "chuongtrinhdaotao");
-                ResizeDatagridview.AutoResize(dataGridView);
+                dgvStudent.Swap(dataGridView, pnlMain, "chuongtrinhdaotao");
                 btnTraMa.Text = "Back";
             }    
             else
             {
-                pnlMain.Controls.Remove(dataGridView);
-                pnlMain.Controls.Add(dgvStudent);
-                LoadData();
+                dataGridView.Swap(dgvStudent, pnlMain, "sinhvien");
                 btnTraMa.Text = "Tra mã";
-                ResizeDatagridview.AutoResize(dgvStudent);
             }
         }
 
@@ -181,5 +172,7 @@ namespace EnrollStudentsInSchool_
                 }
             }    
         }
+
+
     }
 }

@@ -162,7 +162,6 @@ namespace EnrollStudentsInSchool_
             // 
             // label16
             // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.Red;
@@ -224,7 +223,6 @@ namespace EnrollStudentsInSchool_
             // 
             // txtTimKiemSV
             // 
-            this.txtTimKiemSV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtTimKiemSV.BackColor = System.Drawing.Color.White;
             this.txtTimKiemSV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTimKiemSV.Location = new System.Drawing.Point(200, 387);
@@ -266,7 +264,7 @@ namespace EnrollStudentsInSchool_
             // 
             this.txtChuongTrinhDaoTao.BackColor = System.Drawing.Color.White;
             this.txtChuongTrinhDaoTao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtChuongTrinhDaoTao.Location = new System.Drawing.Point(747, 328);
+            this.txtChuongTrinhDaoTao.Location = new System.Drawing.Point(746, 332);
             this.txtChuongTrinhDaoTao.Name = "txtChuongTrinhDaoTao";
             this.txtChuongTrinhDaoTao.Size = new System.Drawing.Size(99, 27);
             this.txtChuongTrinhDaoTao.TabIndex = 3;
@@ -324,7 +322,6 @@ namespace EnrollStudentsInSchool_
             // 
             // btnFind
             // 
-            this.btnFind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnFind.BackColor = System.Drawing.Color.Gainsboro;
             this.btnFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFind.Location = new System.Drawing.Point(16, 386);
@@ -337,7 +334,7 @@ namespace EnrollStudentsInSchool_
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.BackColor = System.Drawing.Color.Gainsboro;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Location = new System.Drawing.Point(1291, 386);
@@ -350,7 +347,7 @@ namespace EnrollStudentsInSchool_
             // 
             // btnDelete
             // 
-            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.BackColor = System.Drawing.Color.Gainsboro;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Location = new System.Drawing.Point(1179, 387);
@@ -377,7 +374,7 @@ namespace EnrollStudentsInSchool_
             // 
             // btnAdd
             // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -538,10 +535,11 @@ namespace EnrollStudentsInSchool_
             this.Column10,
             this.Column11});
             this.dgvStudent.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvStudent.Location = new System.Drawing.Point(0, 444);
+            this.dgvStudent.Location = new System.Drawing.Point(0, 502);
             this.dgvStudent.Name = "dgvStudent";
+            this.dgvStudent.RowHeadersWidth = 51;
             this.dgvStudent.RowTemplate.Height = 25;
-            this.dgvStudent.Size = new System.Drawing.Size(1400, 406);
+            this.dgvStudent.Size = new System.Drawing.Size(1400, 348);
             this.dgvStudent.TabIndex = 0;
             this.dgvStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudentCellClick);
             // 
@@ -549,50 +547,63 @@ namespace EnrollStudentsInSchool_
             // 
             this.maSinhVien.DataPropertyName = "maSinhVien";
             this.maSinhVien.HeaderText = "MSSV";
+            this.maSinhVien.MinimumWidth = 6;
             this.maSinhVien.Name = "maSinhVien";
             this.maSinhVien.ReadOnly = true;
+            this.maSinhVien.Width = 125;
             // 
             // FullName
             // 
             this.FullName.DataPropertyName = "ten";
             this.FullName.HeaderText = "Họ và Tên";
+            this.FullName.MinimumWidth = 6;
             this.FullName.Name = "FullName";
             this.FullName.ReadOnly = true;
+            this.FullName.Width = 125;
             // 
             // namNhapHoc
             // 
             this.namNhapHoc.DataPropertyName = "namNhapHoc";
             this.namNhapHoc.HeaderText = "Năm nhập học";
+            this.namNhapHoc.MinimumWidth = 6;
             this.namNhapHoc.Name = "namNhapHoc";
             this.namNhapHoc.ReadOnly = true;
+            this.namNhapHoc.Width = 125;
             // 
             // Column1
             // 
             this.Column1.DataPropertyName = "ngaySinh";
             this.Column1.HeaderText = "Ngày Sinh";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
             // 
             // Column3
             // 
             this.Column3.DataPropertyName = "maChuongTrinhDaoTao";
             this.Column3.HeaderText = "Mã chương trình đào tạo";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "gioiTinh";
             this.Column4.HeaderText = "Giới tính (Nam)";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column4.Width = 125;
             // 
             // Column5
             // 
             this.Column5.DataPropertyName = "email";
             this.Column5.HeaderText = "Email";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.Width = 200;
@@ -601,20 +612,25 @@ namespace EnrollStudentsInSchool_
             // 
             this.PhoneNumer.DataPropertyName = "sdt";
             this.PhoneNumer.HeaderText = "Số điện thoại";
+            this.PhoneNumer.MinimumWidth = 6;
             this.PhoneNumer.Name = "PhoneNumer";
             this.PhoneNumer.ReadOnly = true;
+            this.PhoneNumer.Width = 125;
             // 
             // Column7
             // 
             this.Column7.DataPropertyName = "ngayxoa";
             this.Column7.HeaderText = "Ngày xóa";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
+            this.Column7.Width = 125;
             // 
             // Column8
             // 
             this.Column8.DataPropertyName = "Diachi";
             this.Column8.HeaderText = "Địa chỉ";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.Width = 300;
@@ -623,20 +639,25 @@ namespace EnrollStudentsInSchool_
             // 
             this.Column9.DataPropertyName = "Noisinh";
             this.Column9.HeaderText = "Nơi sinh";
+            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
+            this.Column9.Width = 125;
             // 
             // Column10
             // 
             this.Column10.DataPropertyName = "DanToc";
             this.Column10.HeaderText = "Dân tộc";
+            this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
+            this.Column10.Width = 125;
             // 
             // Column11
             // 
             this.Column11.DataPropertyName = "SoCCCD";
             this.Column11.HeaderText = "Số CCCD/CMND";
+            this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
             this.Column11.Width = 145;

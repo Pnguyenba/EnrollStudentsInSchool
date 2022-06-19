@@ -13,5 +13,11 @@ namespace EnrollStudentsInSchool_
             query += $"DECLARE @id int SELECT maSinhVien FROM sinhvien SELECT @id = @@ROWCOUNT INSERT INTO nguoidung VALUES('{UserName}','{PassWord}', N'Sinh Viên',NULL,@id)";
             ExecutenQuery(query);
         }
+
+        public void Insert( string maLopHocPHan, string maMonHoc, string namHoc, string hocKy,
+                            string MaGiangVien, string ngonNguGiangDay, string moTa, string gioiHanSLSV)
+        {
+            
+        }
     }
 }

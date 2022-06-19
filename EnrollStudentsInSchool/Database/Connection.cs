@@ -6,7 +6,7 @@ namespace EnrollStudentsInSchool_
 { 
     public class Connection
     {
-        static string strDataSource = @"MSI\SQLEXPRESS";
+        static string strDataSource = @"DESKTOP-P409H74";
         static string strDataBase = "quanlysinhvien";
         private static string strConnection = @"Data Source='" + strDataSource + "';Initial Catalog='" + strDataBase + "';Integrated Security=True";
         public static SqlConnection GetSqlConnection()
